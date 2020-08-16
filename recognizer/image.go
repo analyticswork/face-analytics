@@ -100,7 +100,7 @@ func (r *Recognizer) DrawFaces(path string, faces []Face) (image.Image, error) {
 		w := float64(f.Rectangle.Dx())
 		h := float64(f.Rectangle.Dy())
 
-		dc.DrawString(f.Id, x, y+h+20)
+		dc.DrawString(f.ID, x, y+h+20)
 
 		dc.DrawRectangle(x, y, w, h)
 		dc.SetLineWidth(4.0)
